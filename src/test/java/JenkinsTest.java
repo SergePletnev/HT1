@@ -6,7 +6,7 @@ import pages.*;
 public class JenkinsTest extends BaseTest {
 
     private User testUser = new User("someuser", "somepassword", "Some Full Name", "some@addr.dom");
-    private User noNameUser = new User("noName", "test", "", "test@addr.dom");
+    private User noNameUser = new User("noFullName", "noFullName", "", "noFullName@addr.dom");
 
     @Test (description = "HT1-1: Test manage jenkins link works correctly")
     public void tstManageJenkins() {
