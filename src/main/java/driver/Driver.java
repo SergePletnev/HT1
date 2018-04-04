@@ -15,15 +15,19 @@ public class Driver {
 
     private static Browser browser = Config.getBrowser();
 
+    private Driver() {
+
+    }
+
     public static synchronized WebDriver getDriver() {
         if (driver == null) {
             switch (browser) {
                 case CHROME:
-                    ChromeDriverManager.getInstance().setup();
+                    ChromeDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(BrowserManager.getChromeOptions());
                     break;
                 case FIREFOX:
-                    FirefoxDriverManager.getInstance().setup();
+                    FirefoxDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver(BrowserManager.getFirefoxOptions());
                     break;
                 default:
