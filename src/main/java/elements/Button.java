@@ -12,7 +12,7 @@ public class Button extends BaseElement {
         try {
             return Color.fromString(webElement.getCssValue("background-color")).asHex();
         } catch (IllegalArgumentException e) {
-            return "Button does not have 'background-color' property";
+            return "Element button does not have 'background-color' property";
         }
 
     }
