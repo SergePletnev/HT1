@@ -7,7 +7,7 @@ public class Input extends BaseElement {
         super(webElement);
     }
 
-    public void fill(String str) {
+    public void write (String str) {
         webElement.clear();
         webElement.sendKeys(str);
     }

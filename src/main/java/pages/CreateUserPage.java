@@ -55,11 +55,11 @@ public class CreateUserPage extends BasePage {
     }
 
     public void createNewUser(User user) {
-        userName.fill(user.getName());
-        password.fill(user.getPassword());
-        confirmPassword.fill(user.getPassword());
-        fullName.fill(user.getFullName());
-        email.fill(user.getEmail());
+        userName.write(user.getName());
+        password.write(user.getPassword());
+        confirmPassword.write(user.getPassword());
+        fullName.write(user.getFullName());
+        email.write(user.getEmail());
         createUserButton.click();
     }
 

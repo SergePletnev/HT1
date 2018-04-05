@@ -31,8 +31,8 @@ public class LoginPage extends BasePage {
     }
 
     public void login(String username, String password) {
-        loginInput.fill(username);
-        passwordInput.fill(password);
+        loginInput.write(username);
+        passwordInput.write(password);
         loginSubmitButton.click();
     }
 
